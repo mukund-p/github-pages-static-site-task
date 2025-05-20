@@ -1,34 +1,71 @@
-/* Apply Inter font to all */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f7f9fc;
+  background-color: #f8f9fb;
   color: #1f2937;
 }
 
-/* Centered container */
-.container {
-  max-width: 700px;
-  margin: 80px auto;
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+header {
   text-align: center;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Heading style */
-h1 {
-  font-size: 2.5rem;
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
   font-weight: 700;
   color: #111827;
-  margin-bottom: 20px;
 }
 
-/* Paragraph style */
-p {
+header p {
   font-size: 1.2rem;
   color: #4b5563;
-  line-height: 1.6;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.task {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+
+.task:hover {
+  transform: translateY(-4px);
+}
+
+.task h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.task p {
+  color: #4b5563;
+  margin: 10px 0 15px;
+}
+
+.task a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  color: #6b7280;
+  background-color: #ffffff;
+  margin-top: 60px;
 }
