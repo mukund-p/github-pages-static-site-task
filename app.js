@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Scroll-triggered animations for project cards
+    // Card animation
     const cards = document.querySelectorAll('.project-card');
     const observerOptions = {
         threshold: 0.1,
@@ -22,23 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cardObserver.observe(card);
     });
 
-    // Mouse parallax effect
-    const updateParallax = (e) => {
+    // Mouse parallax
+    window.addEventListener('mousemove', (e) => {
         const x = (e.clientX / window.innerWidth - 0.5) * 15;
         const y = (e.clientY / window.innerHeight - 0.5) * 15;
         document.documentElement.style.setProperty('--mouse-x', `${x}px`);
         document.documentElement.style.setProperty('--mouse-y', `${y}px`);
-    };
-
-    window.addEventListener('mousemove', updateParallax);
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
     });
 });
