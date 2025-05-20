@@ -1,5 +1,6 @@
+// app.js
 document.addEventListener('DOMContentLoaded', () => {
-    // Animate cards on scroll
+    // 1. Card Animation on Scroll
     const cards = document.querySelectorAll('.project-card');
     
     const observer = new IntersectionObserver(entries => {
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Parallax effect
+    // 2. Mouse Parallax Effect
     window.addEventListener('mousemove', (e) => {
         const x = (e.clientX / window.innerWidth - 0.5) * 20;
         const y = (e.clientY / window.innerHeight - 0.5) * 20;
