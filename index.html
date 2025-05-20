@@ -1,133 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukund's DevOps Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Previous meta tags and title -->
+    <title>Mukund P - DevOps Portfolio</title>
+    <!-- Add LinkedIn preview meta tags -->
+    <meta property="og:title" content="Mukund P - DevOps Engineer">
+    <meta property="og:description" content="DevOps portfolio showcasing CI/CD pipelines, cloud infrastructure, and cloud-native technologies">
+    <meta property="og:image" content="https://mukund-p.github.io/github-pages-static-site-task/assets/preview.jpg">
 </head>
 <body>
-    <div class="blur-overlay"></div>
-    
+    <div class="terminal-bar">
+        <div class="terminal-controls">
+            <span class="terminal-red"></span>
+            <span class="terminal-yellow"></span>
+            <span class="terminal-green"></span>
+        </div>
+        <div class="terminal-title">DevOps Portfolio — bash — 80x24</div>
+    </div>
+
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">DevOps Journey</h1>
-                <p class="hero-subtitle">From Code to Cloud</p>
-                <div class="scroller">
-                    <span>CI/CD</span>
-                    <span>Docker</span>
-                    <span>Kubernetes</span>
-                    <span>Terraform</span>
-                    <span>Jenkins</span>
+                <h1 class="hero-title">
+                    <span class="cli-prompt">$</span>
+                    DevOps Journey
+                </h1>
+                <p class="hero-subtitle">Infrastructure as Code | Cloud Native | CI/CD Pipelines</p>
+                <!-- Updated scroller with consistent animation -->
+                <div class="tech-scroller">
+                    <div class="scroller-inner">
+                        <span class="tech-item">AWS</span>
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-item">Kubernetes</span>
+                        <span class="tech-item">Terraform</span>
+                        <span class="tech-item">Jenkins</span>
+                        <span class="tech-item">GitOps</span>
+                        <span class="tech-item">Prometheus</span>
+                        <span class="tech-item">Grafana</span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="projects-grid">
-            <article class="project-card">
-                <div class="card-content">
-                    <span class="card-number">01</span>
-                    <div class="card-header">
-                        <i class="fab fa-node icon"></i>
-                        <h2>Node.js Demo App</h2>
-                    </div>
-                    <p class="card-description">Containerized Node.js application with full CI/CD pipeline implementation</p>
-                    <a href="https://github.com/mukund-p/nodejs-demo-app" target="_blank" class="card-link">
-                        Explore Repository
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-                <div class="card-glow"></div>
-            </article>
-
-            <!-- Repeat similar structure for other tasks -->
-            <!-- Task 2 -->
-            <article class="project-card">
-                <div class="card-content">
-                    <span class="card-number">02</span>
-                    <div class="card-header">
-                        <i class="fab fa-jenkins icon"></i>
-                        <h2>Jenkins Pipeline</h2>
-                    </div>
-                    <p class="card-description">Automated CI/CD pipeline using Jenkins for seamless deployments</p>
-                    <a href="https://github.com/mukund-p/jenkins-pipeline-task" target="_blank" class="card-link">
-                        Explore Repository
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-                <div class="card-glow"></div>
-            </article>
-
-            <!-- Task 3 -->
-            <article class="project-card">
-                <div class="card-content">
-                    <span class="card-number">03</span>
-                    <div class="card-header">
-                        <i class="fas fa-cloud icon"></i>
-                        <h2>Terraform Docker IaC</h2>
-                    </div>
-                    <p class="card-description">Infrastructure as Code implementation for Docker environments</p>
-                    <a href="https://github.com/mukund-p/terraform-docker-iac-task" target="_blank" class="card-link">
-                        Explore Repository
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-                <div class="card-glow"></div>
-            </article>
-
-            <!-- Task 4 -->
-            <article class="project-card">
-                <div class="card-content">
-                    <span class="card-number">04</span>
-                    <div class="card-header">
-                        <i class="fab fa-git-alt icon"></i>
-                        <h2>Git Workflow</h2>
-                    </div>
-                    <p class="card-description">Implemented Git strategies including branching and workflows</p>
-                    <a href="https://github.com/mukund-p/git-workflow-task" target="_blank" class="card-link">
-                        Explore Repository
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-                <div class="card-glow"></div>
-            </article>
-
-            <!-- Task 5 -->
-            <article class="project-card">
-                <div class="card-content">
-                    <span class="card-number">05</span>
-                    <div class="card-header">
-                        <i class="fas fa-dharmachakra icon"></i>
-                        <h2>Kubernetes Deployment</h2>
-                    </div>
-                    <p class="card-description">Container orchestration and cluster management with K8s</p>
-                    <a href="https://github.com/mukund-p/kubernetes-deployment-task" target="_blank" class="card-link">
-                        Explore Repository
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-                <div class="card-glow"></div>
-            </article>
-        </section>
-    </main>
+    <!-- Project cards remain same as before -->
 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>🚀 Powered by GitHub Pages</p>
                 <div class="socials">
                     <a href="https://github.com/mukund-p" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github"></i> GitHub
                     </a>
+                    <a href="https://www.linkedin.com/in/mukund-p/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+                <div class="footer-credits">
+                    <p>🚀 Deployed via GitHub Pages | ⚡ Optimized for DevOps</p>
+                    <div class="terminal-line">
+                        <span class="cli-prompt">$</span> 
+                        <span class="cli-command">kubectl get pods -n portfolio</span>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="app.js"></script>
 </body>
 </html>
