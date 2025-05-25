@@ -201,6 +201,12 @@ body {
     align-items: center;
     gap: 0.75rem;
     transition: all 0.3s ease;
+
+
+  font-family: -apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, Ubuntu, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(219, 219, 219);
 }
 
 .social-link:hover {
